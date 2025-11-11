@@ -107,3 +107,4 @@ read_exact_permission = True
 {"id": 2, "name": "Phone", "owner": user2, "quantity": 1}
 ```
 
+Что позволяет увидеть приложение в действии.
