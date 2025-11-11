@@ -14,10 +14,10 @@ git clone https://github.com/Sevasya/effective_mobile_test_task.git
 cd effective_mobile_test_task
 ```
 
-В данной папке создайте файл .env
+В данной папке создайте файл .env (Я работаю в VS Code, в другом редакторе могут быть другие команды)
 
 ```bash
-echo . > .env
+code .env 
 ```
 
 В данный файл скопируйте данный код и замените значения логина, пароля и ключа на свои:
@@ -45,5 +45,7 @@ pip install -r .\requirements.txt
 docker-compose up -d
 ```
 
-
-
+Далее применяем миграции:
+```bash
+cd .\effective_mobile\
+py manage.py makemigrations
