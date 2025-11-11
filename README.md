@@ -8,8 +8,42 @@
 - Docker
 - PostgreSQL
 
-### Клонируй проект:
+### Клонируйте проект:
 ```bash
 git clone https://github.com/Sevasya/effective_mobile_test_task.git
+cd effective_mobile_test_task
+```
+
+В данной папке создайте файл .env
+
+```bash
+echo . > .env
+```
+
+В данный файл скопируйте данный код и замените значения логина, пароля и ключа на свои:
+
+```bash
+POSTGRES_USER=YOUR_USERNAME
+POSTGRES_PASSWORD=YOUR_PASSWORD
+SECRET_KEY=YOUR_SECRET_KEY
+```
+
+Создайте виртуальное окружение и активируйте его:
+```bash
+py -m virtualenv env
+.\env\Scripts\activate
+```
+
+Установите зависимости:
+```bash
+pip install -r .\requirements.txt
+```
+
+Запустите образ PostgreSQL (убедитесь, что Docker на Вашем компьтере запущен):
+
+```bash
+docker-compose up -d
+```
+
 
 
