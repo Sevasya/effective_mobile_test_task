@@ -1,6 +1,6 @@
 from django.core.management.base import BaseCommand
 
-from users.models import User, BusinessElement
+from users.models import User
 from objects.models import Product, Order
 
 
@@ -8,8 +8,6 @@ class Command(BaseCommand):
     help = "Создает бизнес-объекты и элементы для демонстрации RBAC"
 
     def handle(self, *args, **options):
-        products_element, _ = BusinessElement.objects.get_or_create(name="products")
-        orders_element, _ = BusinessElement.objects.get_or_create(name="orders")
         self.stdout.write("Созданы BusinessElement: products, orders")
 
         admin = User.objects.filter(email="admin@example.com").first()

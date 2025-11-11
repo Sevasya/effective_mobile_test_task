@@ -48,4 +48,18 @@ docker-compose up -d
 Далее применяем миграции:
 ```bash
 cd .\effective_mobile\
-py manage.py makemigrations
+py manage.py makemigrations objects
+py manage.py makemigrations users 
+py manage.py migrate
+```
+
+Создаем тестовые данные:
+```bash
+py manage.py init_rbac
+py manage.py init_objects
+```
+
+Запускаем сервер:
+```bash
+py manage.py runserver
+```
