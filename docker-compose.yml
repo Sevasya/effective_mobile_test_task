@@ -10,7 +10,7 @@ services:
     environment:
       - POSTGRES_DB=effective_mobile
       - POSTGRES_USER=${POSTGRES_USER}
-      - POSTGRES_PASSWORD=&{POSTGRES_PASSWORD}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
     restart: unless-stopped
 
 volumes:
