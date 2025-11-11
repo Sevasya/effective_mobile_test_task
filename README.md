@@ -100,7 +100,7 @@ read_exact_permission = True
 {"id": 3, "name": "Tablet"}
 ```
 
-### А также заказы:
+### А также заказы (orders):
 
 ```bash
 {"id": 1, "name": "Laptop", "owner": user1, "quantity": 2}
