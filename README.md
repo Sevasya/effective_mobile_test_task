@@ -8,5 +8,8 @@
 - Docker
 - PostgreSQL
 
-### Установка и запуск:
+### Клонируй проект:
+```bash
+git clone https://github.com/Sevasya/effective_mobile_test_task.git
+
 
